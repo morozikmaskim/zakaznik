@@ -1,0 +1,39 @@
+var btn:Btn = new Btn();
+addChild(btn);
+btn.x = 100;
+btn.y = 100;
+btn.addEventListener(MouseEvent.CLICK,func);
+function func(event:MouseEvent):void{
+	gotoAndStop(2);
+}
+stop();
+
+
+
+
+var logo:Logo = new Logo();
+addChild(logo);
+logo.addEventListener(MouseEvent.CLICK,func_logo);
+function func_logo(event:MouseEvent):void{
+	gotoAndStop(2);
+}
+stop();
+
+
+во весь экран 
+
+ Title="Заказник Озёры" WindowStartupLocation="CenterScreen"  WindowStyle="None" ResizeMode="NoResize" WindowState="Maximized">
+
+фон 
+
+<Window.Background>
+        <ImageBrush ImageSource="image/fon.jpg"/>
+    </Window.Background>
+    <Grid>
+
+переход на форму 
+
+            Window1 form2 = new Window1();
+            form2.Show();
+            this.Hide();
+            Close();
